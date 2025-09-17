@@ -4,13 +4,14 @@
 # Requirements:
 
 1- Mac / Windows / Linux  Device with JRE (Java Runtime Environment) installed 
+
 2- Download DNS_Tester.jar . Can be downloaded at [Release](../../releases)
 
 
 # How to use it?
 1-Open the Terminal application.
 
-2-Navigate to the directory containing your DNS_Tester.jar file. For example: " cd ~/Downloads "
+2-Navigate to the directory containing your " DNS_Tester.jar " file. For example: " cd ~/Downloads "
 
 3- Execute the file with the java command:
 java -jar DNS_Tester.jar
