@@ -14,8 +14,9 @@
 2-Navigate to the directory containing your " DNS_Tester.jar " file. For example: " cd ~/Downloads "
 
 3- Execute the file with the java command:
+```
 java -jar DNS_Tester.jar
-
+```
 4- enter ur game server link! For example:
 
 
