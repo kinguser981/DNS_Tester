@@ -134,19 +134,19 @@ fun main() {
 
         // 1. Resolve the hostname to an IP using the specific DNS server
         val resolvedIp = resolveHostWithDns(TARGET_HOSTNAME, dnsIp)
-        println("⦿ Testing DNS: $name ($dnsIp)...")
+        println("* Testing DNS: $name ($dnsIp)...")
         if (resolvedIp == null) {
-            println("   ☒ DNS resolution failed.")
+            println("   $ DNS resolution failed.")
             results.add(DnsResult(name, dnsIp, null, null))
         } else {
-            println("  ☑ Resolved to: $resolvedIp")
+            println("   Resolved to: $resolvedIp")
 
             // 2. Ping the resolved IP address
             val pingTime = pingIpAddress(resolvedIp)
             if (pingTime == null) {
-                println("   ☒ Ping failed or timed out.")
+                println("   $ Ping failed or timed out.")
             } else {
-                println("   ♯ Ping Time: ${"%.2f".format(pingTime)} ms")
+                println("   # Ping Time: ${"%.2f".format(pingTime)} ms")
             }
             results.add(DnsResult(name, dnsIp, resolvedIp, pingTime))
         }
@@ -221,7 +221,7 @@ fun pingIpAddress(ipAddress: String): Double? {
  */
 fun printResults(results: List<DnsResult>) {
     println("\n" + "=".repeat(40))
-    println("☑ Final Results (sorted by best ping)")
+    println("# Final Results (sorted by best ping)")
     println("=".repeat(40))
 
     // Sort results by ping time, putting failures at the end
@@ -240,8 +240,10 @@ fun printResults(results: List<DnsResult>) {
 
     val best = sortedResults.firstOrNull { it.pingTimeMs != null }
     if (best != null) {
-        println("\n① Best DNS Server: ${best.dnsServerName} with ${"%.2f".format(best.pingTimeMs)} ms ping.")
+        println("\n" + "=".repeat(40))
+        println("# Best DNS Server: ${best.dnsServerName} with ${"%.2f".format(best.pingTimeMs)} ms ping.")
+        println("=".repeat(40))
     } else {
-        println("\n☒ No servers could successfully resolve and ping the host.")
+        println("\n# No servers could successfully resolve and ping the host.")
     }
 }
