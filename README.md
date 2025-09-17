@@ -16,22 +16,21 @@ How to use it??
 java -jar DNS_Tester.jar
 
 4- enter ur game server link! For example:
+You can check your ping to data centers listed below:
 
-You can check your ping to data centers listed below.
+  NA-East:         ping-nae.ds.on.epicgames.com
 
-NA-East:         ping-nae.ds.on.epicgames.com
+  NA-Central:      ping-nac.ds.on.epicgames.com
 
-NA-Central:      ping-nac.ds.on.epicgames.com
+  NA-West:         ping-naw.ds.on.epicgames.com
 
-NA-West:         ping-naw.ds.on.epicgames.com
+  Europe:          ping-eu.ds.on.epicgames.com
 
-Europe:          ping-eu.ds.on.epicgames.com
+  Oceania:         ping-oce.ds.on.epicgames.com
 
-Oceania:         ping-oce.ds.on.epicgames.com
+  Brazil:          ping-br.ds.on.epicgames.com
 
-Brazil:          ping-br.ds.on.epicgames.com
-
-Asia:            ping-asia.ds.on.epicgames.com
+  Asia:            ping-asia.ds.on.epicgames.com
 
 Middle East:     ping-me.ds.on.epicgames.com
 
