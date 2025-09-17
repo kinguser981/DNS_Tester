@@ -7,7 +7,7 @@ Requirements:
 2- Download DNS_Tester.jar . Can be downloaded at [Release](../../releases)
 
 
-How to use it??
+# How to use it?
 1-Open the Terminal application.
 
 2-Navigate to the directory containing your DNS_Tester.jar file. For example: " cd ~/Downloads "
